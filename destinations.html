@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+.hero-video-2 {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.hero-video-2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+        font-family: 'serif', 'gotham black';
+    }
+
+    .lead-text {
+        color: 	#ffffff;
+    }
+
+    .explore-heading {
+        font-family: 'Gotham black', sans-serif; /* Change this to your desired font family */
+    }
+
+    .get-started-btn {
+        color: #ffffff; /* Change this to your desired color value */
+    }
+
+    .logo-img {
+    height: 50px; /* Adjust the height to your preference */
+    /* Additional styling as needed */
+    }
+
+    .featured-heading {
+        background: linear-gradient(to right, #300049, #001c50);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 48px; /* Adjust font size as needed */
+        margin-bottom: 60px; /* Adjust margin as needed */
+        font-family: 'Gotham black'
+    }
+    .learn-more-btn {
+        background-color: #c489ff; /* Background color of the "Learn More" button */
+        color: #fff; /* Text color of the "Learn More" button */
+        border: none; /* Remove border if needed */
+        border-radius: 15px; /* Adjust border-radius for rounded buttons */
+        padding: 10px 20px; /* Adjust padding as needed */
+        text-decoration: none; /* Remove underline if needed */
+        display: inline-block;
+        transition: background-color 0.3s ease; /* Smooth transition effect */
+    }
+
+    .learn-more-btn:hover {
+        background-color: #9d68ff; /* Background color on hover */
+    }
+
+    .get-started-btn {
+        color: #fff; /* Text color of the "Get Started" button */
+        border: none; /* Remove border if needed */
+        border-radius: 15px; /* Adjust border-radius for rounded buttons */
+        padding: 10px 20px; /* Adjust padding as needed */
+        text-decoration: none; /* Remove underline if needed */
+        display: inline-block;
+        transition: color 0.3s ease; /* Smooth transition effect for text color */
+    }
+
+    .get-started-btn:hover {
+        color: #300049; /* Text color on hover */
+    }
+
+    @keyframes moveInFromBottom {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        body {
+        font-family: "serif";
+    }
+      .destination-card {
+        border-radius: 20px;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .destination-card:hover {
+            transform: scale(1.05);
+        }
+
+        .search-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+        }
+
+        .search-bar {
+            font-family: 'poppins';
+            width: 400px; /* Adjust the width as needed */
+            border-radius: 40px; /* Adjust border-radius for rounded corners */
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.568); /* Adjust the background color and opacity as needed */
+            color: #000; /* Text color of the search bar */
+            border: none; /* Remove border if needed */
+            margin: 0 auto;
+        }
+
+        
+    .btn-click-animation:active {
+        transform: translateY(2px); /* Move the button 2 pixels down when clicked */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+    }
+    
+    @keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+
+</style>
+</head>
+<body >
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="D:\web\cloud group.png" alt="Your Logo" class="logo-img">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="animation: moveInFromBottom 1s ease 1 normal;" href="home.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="animation: moveInFromBottom 0.8s ease 1 normal;" href="destinations.html"><b>Destinations</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="animation: moveInFromBottom 0.6s ease 1 normal;" href="events.html"><b>Events</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="animation: moveInFromBottom 0.4s ease 1 normal;" href="aboutus.html"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="animation: moveInFromBottom 0.2s ease 1 normal;" href="contactus.html"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <section class="hero-video relative">
+    <div class="relative">
+        <img src="D:\web\photos\destinations\bgimg.png" alt="Background Image" class="w-full h-30">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+  
+    <div class="absolute inset-0 flex items-center justify-center text-light text-center py-5" style="margin-top: -400px;">
+        <div>
+            <h1 class="display-4 explore-heading" style="animation: moveInFromBottom 2s ease 1 normal;">Destinations</h1>
+            <p class="lead lead-text" style="animation: moveInFromBottom 1.5s ease 1 normal;">Embark on a journey to explore an array of captivating destinations, each offering<br> a unique tapestry of landscapes, history, and cultural marvels waiting to be discovered.</p><br>
+                
+        </div>
+    </div>
+</section>
+<br>
+    <br>
+    <br>
+<section>
+    <h2 class="text-center mb-4 featured-heading relative">
+        Most Beautiful Places In Sri Lanka
+    </h2>
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Destination Card 1 -->
+    <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-80">
+      <img src="D:\web\photos\viajar-a-Sri-Lanka.jpg" alt="Destination 1" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Nuwara Eliya</h3>
+        <p class="text-gray-700">The town's attractions include the golf course, trout streams, Victoria Park, and boating or fishing on Lake Gregory</p><br>
+        <a href="nuwaraeliya.html" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+            Learn more
+        </a>
+      </div>
+    </div>
+  
+    <!-- Destination Card 2 -->
+    <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+      <img src="D:\web\photos\kandy-1.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Kandy</h3>
+        <p class="text-gray-700">Kandy is very popular due to the annual pageant known as the Esala Perahera and The Royal Botanical Garden</p><br>
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+            Learn more
+        </a>
+      </div>
+    </div>
+  
+    <!-- Destination Card 3 -->
+    <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+      <img src="D:\web\photos\sample\yala-national-park-sri-lanka-scenery-elephant.jpg" alt="Destination 3" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Yala</h3>
+        <p class="text-gray-700">one of Sri Lanka 's premier Wildlife destinations, home to many Elephants, Leopards, Sloth Bears, Crocodiles and more.</p><br>
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+            Learn more
+        </a>
+      </div>
+    </div>
+    <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\The+Common+Wanderer-160.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Mirissa</h3>
+          <p class="text-gray-700">Mirissa is a small heaven located in the South Coast of Sri Lanka, only about 200km away from the Equator.</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\Tangalle-Sri-Lanka-Silence-Beach-2-Couverture.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Tangalle</h3>
+          <p class="text-gray-700">One of the main reasons of its hype and popularity is its alluring beaches which never fail to capture ones attention.</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\Jaffna-Fort-5.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Jaffna</h3>
+          <p class="text-gray-700">Jaffna is a city on the northern tip of Sri Lanka. Nallur Kandaswamy is a huge Hindu temple with golden arches and an ornate gopuram tower.</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\polonnaruwa-day-tour.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Polonnaruwa</h3>
+          <p class="text-gray-700">The ancient city of Polonnaruwa remains one of the best planned Archeological relic sites in the country.</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\shutterstock-480723793_main_1481633955837.jpeg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Anuradhapura</h3>
+          <p class="text-gray-700">The ancient city of Anuradhapura was quite large in its heyday, and so there is a lot of archaeology to see.</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\1bacba85-city-46478-169110981a8.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Negambo</h3>
+          <p class="text-gray-700">Negombo offers some of the better beaches on the west coast. tourists stop over for a day on their way to or from..</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\colombo-sri-lanka-12fb929f68f145379077137d65531e81.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Colombo</h3>
+          <p class="text-gray-700">Colombo is the largest city and commercial capital of Sri Lanka. Colombo is a busy and vibrant city with a mixture..</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+              Learn more
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+
+	<link rel="dns-prefetch" href="//unpkg.com" />
+	<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slideIn");  // Add your animation class here
+          }
+        });
+      });
+  
+      const element = document.querySelector('.featured-heading');
+  
+      if (element) {
+        observer.observe(element);
+      }
+    });
+  </script>
+  </div>
+  <!-- Footer -->
+<footer class="bg-red-900 text-white text-center py-3 relative">
+  <img src="D:\web\photos\cloud travels.png" alt="Cloud Travels Logo" class="mx-auto my-3" style="max-width: 400px;">
+  <div style="border-top: 1px solid white; margin-top: 7px;"></div><br>
+  <p>&copy; 2024 Cloud Travels</p>
+</footer>
+</body>
+</html>

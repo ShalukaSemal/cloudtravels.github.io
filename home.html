@@ -49,7 +49,7 @@
 }
 
 body {
-        font-family: 'serif', 'gotham black';
+        font-family: 'Distant Feeling', 'gotham black';
     }
 
     .lead-text {
@@ -57,7 +57,7 @@ body {
     }
 
     .explore-heading {
-        font-family: 'Gotham black', sans-serif; /* Change this to your desired font family */
+        font-family: 'Gotham black', 'Distant Feeling'; /* Change this to your desired font family */
     }
 
     .get-started-btn {
@@ -180,7 +180,7 @@ body {
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="cloud group.png" alt="Your Logo" class="logo-img">
+        <img src="D:\web\cloud group.png" alt="Your Logo" class="logo-img">
     </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -201,7 +201,7 @@ body {
                     <a class="nav-link" style="animation: moveInFromBottom 0.4s ease 1 normal;" href="aboutus.html"><b>About</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="animation: moveInFromBottom 0.2s ease 1 normal;" href="#"><b>Contact</b></a>
+                    <a class="nav-link" style="animation: moveInFromBottom 0.2s ease 1 normal;" href="contactus.html"><b>Contact</b></a>
                 </li>
             </ul>
         </div>
@@ -211,7 +211,7 @@ body {
 
 <section class="hero-video relative">
     <video autoplay muted loop id="backgroundVideo" class="w-full">
-      <source src="waterfall_-_37088 (1080p)_1.mp4" type="video/mp4">
+      <source src="D:\web\waterfall_-_37088 (1080p)_1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   
@@ -222,19 +222,19 @@ body {
       <br>
       <br>
       <br>
-      <h1 class="display-4 explore-heading" style="animation: moveInFromBottom 2s ease 1 normal;">EXPLORE THE<br>PEARL OF THE ORIENT</h1>
+      <h1 class="display-4 explore-heading" style="animation: moveInFromBottom 2s ease 1 normal;">EXPLORE THE<br>PEARL OF THE INDIAN OCEAN</h1>
       <p class="lead lead-text" style="animation: moveInFromBottom 1.5s ease 1 normal;"> Discover the wonders of Sri Lanka, where ancient history, vibrant culture,
         <br>and breathtaking landscapes converge in a truly captivating experience.</p><br>
       <a href="destinations.html" id="getStartedButton" class="btn btn-lg rounded-pill border border-white get-started-btn" style="animation: moveInFromBottom 1s ease 1 normal;">Explore</a>
-      <!-- Search bar -->
+      <!-- Search bar 
       <br>
       <br>
       <br>
       <div class="search-bar-container">
         <input type="text" style="animation: moveInFromBottom 0.5s ease 1 normal;" class="form-control search-bar" placeholder="Search destinations...">
       </div>
-    </div>
-  </section>
+    </div> -->
+  </section> 
   
 
   <script>
@@ -301,60 +301,114 @@ body {
         <span class="absolute bottom-0 left-1/2 w-48 h-1 bg-red-500 transform -translate-x-1/2"></span>
     </h2>
     
-      <div class="row">
-          <!-- Popular Destination Cards -->
-          <div class="col-lg-4 mb-4">
-              <div class="card destination-card">
-                  <img src="sri-lanka-tangalle-beach-aerial-sj84qckd6uwxgwey.jpg" class="card-img-top" alt="Destination Image">
-                  <div class="card-body">
-                      <h5 class="card-title"><b>Tangalle Beach</b></h5>
-                      <p class="card-text">7 Days, 6 Nights</p>
-                      <a href="#" class="btn btn-primary learn-more-btn">Browse</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card destination-card">
-                <img src="D:\web\photos\kandy-1.jpg" class="card-img-top" alt="Destination Image">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Kandy</b></h5>
-                    <p class="card-text">7 Days, 6 Nights</p>
-                    <a href="#" class="btn btn-primary learn-more-btn">Browse</a>
-                </div>
-            </div>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Destination Card 1 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-80">
+        <img src="D:\web\photos\viajar-a-Sri-Lanka.jpg" alt="Destination 1" class="w-full h-64 object-cover">
+        <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Nuwara Eliya</h3>
+        <p class="text-gray-700">Description of Destination 1</p><br>
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+          Learn more
+        </a>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card destination-card">
-              <img src="D:\web\photos\Golden-Temple-Dambulla-Sri-Lanka.jpg" class="card-img-top" alt="Destination Image">
-              <div class="card-body">
-                  <h5 class="card-title"><b>Dambulla</b></h5>
-                  <p class="card-text">7 Days, 6 Nights</p>
-                  <a href="#" class="btn btn-primary learn-more-btn">Browse</a>
-              </div>
-          </div>
       </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card destination-card">
-            <img src="D:\web\photos\istockphoto-1087388190-612x612.jpg" class="card-img-top" alt="Destination Image">
-            <div class="card-body">
-                <h5 class="card-title"><b>Galle</b></h5>
-                <p class="card-text">7 Days, 6 Nights</p>
-                <a href="#" class="btn btn-primary learn-more-btn">Browse</a>
-            </div>
+      
+      <!-- Destination Card 2 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\kandy-1.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Kandy</h3>
+        <p class="text-gray-700">Description of Destination 2</p><br>
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+          Learn more
+        </a>
+        </div>
+      </div>
+      
+      <!-- Destination Card 3 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\sample\yala-national-park-sri-lanka-scenery-elephant.jpg" alt="Destination 3" class="w-full h-64 object-cover">
+        <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Yala</h3>
+        <p class="text-gray-700">Description of Destination 3</p><br>
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+          Learn more
+        </a>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\The+Common+Wanderer-160.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Mirissa</h3>
+          <p class="text-gray-700">Description of Destination 2</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+            Learn more
+          </a>
+        </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden transition duration-500 transform hover:scale-105 hover:opacity-75">
+        <img src="D:\web\photos\destinations\Tangalle-Sri-Lanka-Silence-Beach-2-Couverture.jpg" alt="Destination 2" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Tangalle</h3>
+          <p class="text-gray-700">Description of Destination 2</p><br>
+          <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+            Learn more
+          </a>
+        </div>
         </div>
     </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card destination-card">
-            <img src="D:\web\photos\istockphoto-1733655529-612x612.jpg" class="card-img-top" alt="Destination Image">
-            <div class="card-body">
-                <h5 class="card-title"><b>Jaffna</b></h5>
-                <p class="card-text">7 Days, 6 Nights</p>
-                <a href="#" class="btn btn-primary learn-more-btn">Browse</a>
-            </div>
-        </div>
-    </div>
-</section> 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 class="text-center mb-4 featured-heading relative">
+  Culture of Sri Lanka
+  <span class="absolute bottom-0 left-1/2 w-32 h-1 bg-red-500 transform -translate-x-1/2"></span>
+</h2>
+<p class="font-semibold text-gray-700 lg:w-2/3 mx-auto text-center mb-4 font-minion-variable-concept">Sri Lanka's culture is a captivating blend of ancient traditions and vibrant celebrations. From the<br>
+  rhythmic beats of traditional drumming to the aromatic allure of spicy curries, the island's <br>
+  essence is woven into its rich history. With colorful festivals, historic temples, and warm hospitality,<br>
+  exploring Sri Lankan culture is an enchanting journey into a world where tradition meets diversity.</p>
+<div class="container mx-auto">
+  <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
+    <div>
+      <img src="D:\web\photos\culture\istockphoto-537289790-612x612.jpg" alt="Photo 1" loading="lazy" class="w-full h-30 object-cover">
+    </div>
+    <div class="col-start-3">
+      <img src="D:\web\photos\culture\DSC_2290-1038x576.jpg" alt="Photo 2" loading="lazy" class="w-full h-52 object-cover">
+    </div>
+    <div>
+      <img src="D:\web\photos\culture\culture-2-sri-lanka.jpg" alt="Photo 3" loading="lazy" class="w-full h-56 object-cover">
+    </div>
+    <div>
+      <img src="D:\web\photos\culture\L6791-5--1597140535705258.jpg" alt="Photo 4" loading="lazy" class="w-full h-70 object-cover">
+    </div>
+    <div class="row-start-1 col-start-2 col-span-2">
+      <img src="D:\web\photos\culture\AdobeStock_258768935-sri-lanka.jpeg" alt="Photo 5" loading="lazy" class="w-full h-72 object-cover">
+    </div>
+  </div>
+</div>
+<br>
+<div class="col-span-3 flex justify-center">
+  <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+  Gallery
+</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
 <!-- Upcoming Events Section -->
         <br>
         <br>
@@ -430,7 +484,7 @@ body {
 </section>
 
 <!-- Our Services -->
-<section class="py-10 bg-red-200">
+<section class="py-10 bg-yellow-100">
     <div class="container mx-auto">
         <div class="mb-10">
             <h2 class="text-center mb-4 featured-heading relative">
@@ -527,7 +581,7 @@ body {
         Reserve your stay 45 days in advance exclusively on our official website and enjoy an exclusive 15% discount.<br>Seize the opportunity to unlock savings and make your travel dreams a reality. Book now for an unforgettable experience!</p>
 
     <div class="d-flex justify-content-center">
-        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
+        <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-500">
             Book Now
         </a>
     </div>
@@ -544,48 +598,7 @@ body {
 <br>
 
 <!-- Culture of Sri Lanka -->
-<h2 class="text-center mb-4 featured-heading relative">
-    Culture of Sri Lanka
-    <span class="absolute bottom-0 left-1/2 w-32 h-1 bg-red-500 transform -translate-x-1/2"></span>
-  </h2>
-<p class="font-semibold text-gray-700 lg:w-2/3 mx-auto text-center mb-4 font-minion-variable-concept">Sri Lanka's culture is a captivating blend of ancient traditions and vibrant celebrations. From the<br>
-    rhythmic beats of traditional drumming to the aromatic allure of spicy curries, the island's <br>
-    essence is woven into its rich history. With colorful festivals, historic temples, and warm hospitality,<br>
-    exploring Sri Lankan culture is an enchanting journey into a world where tradition meets diversity.</p>
-<div class="container mx-auto">
-    <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-      <div>
-        <img src="D:\web\photos\culture\istockphoto-537289790-612x612.jpg" alt="Photo 1" loading="lazy" class="w-full h-30 object-cover">
-      </div>
-      <div class="col-start-3">
-        <img src="D:\web\photos\culture\DSC_2290-1038x576.jpg" alt="Photo 2" loading="lazy" class="w-full h-52 object-cover">
-      </div>
-      <div>
-        <img src="D:\web\photos\culture\culture-2-sri-lanka.jpg" alt="Photo 3" loading="lazy" class="w-full h-56 object-cover">
-      </div>
-      <div>
-        <img src="D:\web\photos\culture\L6791-5--1597140535705258.jpg" alt="Photo 4" loading="lazy" class="w-full h-70 object-cover">
-      </div>
-      <div class="row-start-1 col-start-2 col-span-2">
-        <img src="D:\web\photos\culture\AdobeStock_258768935-sri-lanka.jpeg" alt="Photo 5" loading="lazy" class="w-full h-72 object-cover">
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="col-span-3 flex justify-center">
-    <a href="your-link-here" class="bg-red-900 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">
-    Gallery
-</a>
-</div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-</section>
+
 
 <!--<div>
     <h2 class="text-center mb-4 featured-heading">Our Story</h2>
